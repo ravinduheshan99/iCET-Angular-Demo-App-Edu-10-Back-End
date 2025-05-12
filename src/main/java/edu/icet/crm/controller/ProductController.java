@@ -15,7 +15,6 @@ public class ProductController {
 
     private final ProductService productService;
 
-    //no need to specify the method like "create-product" separately in mappings
     @PostMapping
     public Product persist(@RequestBody Product product){
         log.info("Request Received to Create Product: {}", product);
